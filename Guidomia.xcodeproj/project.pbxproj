@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		A9C86D752C359EB400FFACC8 /* GuidomiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86D742C359EB400FFACC8 /* GuidomiaApp.swift */; };
-		A9C86D772C359EB400FFACC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86D762C359EB400FFACC8 /* ContentView.swift */; };
-		A9C86D792C359EB500FFACC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C86D782C359EB500FFACC8 /* Assets.xcassets */; };
-		A9C86D7D2C359EB500FFACC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C86D7C2C359EB500FFACC8 /* Preview Assets.xcassets */; };
+		A9C86D7D2C359EB500FFACC8 /* PreviewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C86D7C2C359EB500FFACC8 /* PreviewAssets.xcassets */; };
 		A9C86D872C359EB500FFACC8 /* GuidomiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86D862C359EB500FFACC8 /* GuidomiaTests.swift */; };
 		A9C86D912C359EB500FFACC8 /* GuidomiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86D902C359EB500FFACC8 /* GuidomiaUITests.swift */; };
 		A9C86D932C359EB500FFACC8 /* GuidomiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86D922C359EB500FFACC8 /* GuidomiaUITestsLaunchTests.swift */; };
+		A9C86DA62C35A35600FFACC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86DA32C35A35600FFACC8 /* ContentView.swift */; };
+		A9C86DA92C35A82700FFACC8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C86DA82C35A82700FFACC8 /* Images.xcassets */; };
+		A9C86DAB2C35A84000FFACC8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C86DAA2C35A84000FFACC8 /* Colors.xcassets */; };
+		A9C86DAD2C35A8A000FFACC8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9C86DAC2C35A8A000FFACC8 /* Localizable.strings */; };
+		A9C86DB72C35AF7A00FFACC8 /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86DB42C35AF7A00FFACC8 /* Assets+Generated.swift */; };
+		A9C86DB82C35AF7A00FFACC8 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86DB52C35AF7A00FFACC8 /* Strings+Generated.swift */; };
+		A9C86DB92C35AF7A00FFACC8 /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86DB62C35AF7A00FFACC8 /* Fonts+Generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +41,20 @@
 /* Begin PBXFileReference section */
 		A9C86D712C359EB400FFACC8 /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C86D742C359EB400FFACC8 /* GuidomiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaApp.swift; sourceTree = "<group>"; };
-		A9C86D762C359EB400FFACC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A9C86D782C359EB500FFACC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9C86D7A2C359EB500FFACC8 /* Guidomia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guidomia.entitlements; sourceTree = "<group>"; };
-		A9C86D7C2C359EB500FFACC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A9C86D7C2C359EB500FFACC8 /* PreviewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PreviewAssets.xcassets; sourceTree = "<group>"; };
 		A9C86D822C359EB500FFACC8 /* GuidomiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuidomiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C86D862C359EB500FFACC8 /* GuidomiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaTests.swift; sourceTree = "<group>"; };
 		A9C86D8C2C359EB500FFACC8 /* GuidomiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuidomiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C86D902C359EB500FFACC8 /* GuidomiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITests.swift; sourceTree = "<group>"; };
 		A9C86D922C359EB500FFACC8 /* GuidomiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9C86DA32C35A35600FFACC8 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A9C86DA82C35A82700FFACC8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9C86DAA2C35A84000FFACC8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A9C86DAC2C35A8A000FFACC8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A9C86DB42C35AF7A00FFACC8 /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
+		A9C86DB52C35AF7A00FFACC8 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		A9C86DB62C35AF7A00FFACC8 /* Fonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,21 +105,23 @@
 		A9C86D732C359EB400FFACC8 /* Guidomia */ = {
 			isa = PBXGroup;
 			children = (
-				A9C86D742C359EB400FFACC8 /* GuidomiaApp.swift */,
-				A9C86D762C359EB400FFACC8 /* ContentView.swift */,
-				A9C86D782C359EB500FFACC8 /* Assets.xcassets */,
 				A9C86D7A2C359EB500FFACC8 /* Guidomia.entitlements */,
-				A9C86D7B2C359EB500FFACC8 /* Preview Content */,
+				A9C86D742C359EB400FFACC8 /* GuidomiaApp.swift */,
+				A9C86DA42C35A35600FFACC8 /* Common */,
+				A9C86DA22C35A35600FFACC8 /* Screens */,
+				A9C86DA02C35A35600FFACC8 /* Resources */,
+				A9C86D7B2C359EB500FFACC8 /* PreviewContent */,
+				A9C86DB32C35AF7A00FFACC8 /* Generated */,
 			);
 			path = Guidomia;
 			sourceTree = "<group>";
 		};
-		A9C86D7B2C359EB500FFACC8 /* Preview Content */ = {
+		A9C86D7B2C359EB500FFACC8 /* PreviewContent */ = {
 			isa = PBXGroup;
 			children = (
-				A9C86D7C2C359EB500FFACC8 /* Preview Assets.xcassets */,
+				A9C86D7C2C359EB500FFACC8 /* PreviewAssets.xcassets */,
 			);
-			path = "Preview Content";
+			path = PreviewContent;
 			sourceTree = "<group>";
 		};
 		A9C86D852C359EB500FFACC8 /* GuidomiaTests */ = {
@@ -129,6 +141,49 @@
 			path = GuidomiaUITests;
 			sourceTree = "<group>";
 		};
+		A9C86DA02C35A35600FFACC8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9C86DA82C35A82700FFACC8 /* Images.xcassets */,
+				A9C86DAA2C35A84000FFACC8 /* Colors.xcassets */,
+				A9C86DA72C35A82700FFACC8 /* Fonts */,
+				A9C86DAC2C35A8A000FFACC8 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A9C86DA22C35A35600FFACC8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A9C86DA32C35A35600FFACC8 /* ContentView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A9C86DA42C35A35600FFACC8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A9C86DA72C35A82700FFACC8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A9C86DB32C35AF7A00FFACC8 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				A9C86DB42C35AF7A00FFACC8 /* Assets+Generated.swift */,
+				A9C86DB52C35AF7A00FFACC8 /* Strings+Generated.swift */,
+				A9C86DB62C35AF7A00FFACC8 /* Fonts+Generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +192,7 @@
 			buildConfigurationList = A9C86D962C359EB500FFACC8 /* Build configuration list for PBXNativeTarget "Guidomia" */;
 			buildPhases = (
 				A9C86D6D2C359EB400FFACC8 /* Sources */,
+				A9C86DAE2C35ABDD00FFACC8 /* Generate SwiftGen Resources */,
 				A9C86D6E2C359EB400FFACC8 /* Frameworks */,
 				A9C86D6F2C359EB400FFACC8 /* Resources */,
 			);
@@ -145,6 +201,8 @@
 			dependencies = (
 			);
 			name = Guidomia;
+			packageProductDependencies = (
+			);
 			productName = Guidomia;
 			productReference = A9C86D712C359EB400FFACC8 /* Guidomia.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +275,8 @@
 				Base,
 			);
 			mainGroup = A9C86D682C359EB400FFACC8;
+			packageReferences = (
+			);
 			productRefGroup = A9C86D722C359EB400FFACC8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,8 +293,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9C86D7D2C359EB500FFACC8 /* Preview Assets.xcassets in Resources */,
-				A9C86D792C359EB500FFACC8 /* Assets.xcassets in Resources */,
+				A9C86DAB2C35A84000FFACC8 /* Colors.xcassets in Resources */,
+				A9C86DAD2C35A8A000FFACC8 /* Localizable.strings in Resources */,
+				A9C86DA92C35A82700FFACC8 /* Images.xcassets in Resources */,
+				A9C86D7D2C359EB500FFACC8 /* PreviewAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +316,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A9C86DAE2C35ABDD00FFACC8 /* Generate SwiftGen Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate SwiftGen Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftgen > /dev/null; then\n  swiftgen config run --config swiftgen.yml\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9C86D6D2C359EB400FFACC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9C86D772C359EB400FFACC8 /* ContentView.swift in Sources */,
+				A9C86DA62C35A35600FFACC8 /* ContentView.swift in Sources */,
 				A9C86D752C359EB400FFACC8 /* GuidomiaApp.swift in Sources */,
+				A9C86DB82C35AF7A00FFACC8 /* Strings+Generated.swift in Sources */,
+				A9C86DB92C35AF7A00FFACC8 /* Fonts+Generated.swift in Sources */,
+				A9C86DB72C35AF7A00FFACC8 /* Assets+Generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +420,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -395,7 +481,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -419,7 +505,7 @@
 				CODE_SIGN_ENTITLEMENTS = Guidomia/Guidomia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Guidomia/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Guidomia/PreviewContent\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -430,20 +516,21 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.Guidomia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.guidomia.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,7 +542,7 @@
 				CODE_SIGN_ENTITLEMENTS = Guidomia/Guidomia.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Guidomia/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Guidomia/PreviewContent\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -466,20 +553,21 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.apple.Guidomia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.guidomia.mobile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
