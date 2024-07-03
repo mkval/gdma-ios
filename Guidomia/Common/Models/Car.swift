@@ -9,8 +9,8 @@ import Foundation
 
 struct Car: BaseModel, Decodable, Identifiable {
   let id: Int
-  let make: String
-  let model: String
+  let make: CarMake
+  let model: CarModel
   
   let customerPrice: Double
   let marketPrice: Double
@@ -35,8 +35,8 @@ struct Car: BaseModel, Decodable, Identifiable {
     let container = try decoder.container(keyedBy: CodingKeys.self)
     
     self.id = try container.decode(Int.self, forKey: .id)
-    self.make = try container.decode(String.self, forKey: .make)
-    self.model = try container.decode(String.self, forKey: .model)
+    self.make = try container.decode(CarMake.self, forKey: .make)
+    self.model = try container.decode(CarModel.self, forKey: .model)
     self.customerPrice = try container.decode(Double.self, forKey: .customerPrice)
     self.marketPrice = try container.decode(Double.self, forKey: .marketPrice)
     self.rating = try container.decode(Int.self, forKey: .rating)

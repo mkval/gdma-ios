@@ -5,3 +5,5 @@
   Created by Mark Valles on 7/3/24.
   
 */
+
+CarList.Item.Labels.Price = "Price";

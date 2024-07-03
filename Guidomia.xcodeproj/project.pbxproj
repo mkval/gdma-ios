@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A94F8EDC2C35CB4900C152C7 /* CarMake.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EDB2C35CB4900C152C7 /* CarMake.swift */; };
+		A94F8EDE2C35CB6000C152C7 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EDD2C35CB6000C152C7 /* CarModel.swift */; };
+		A94F8EE02C35D26E00C152C7 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EDF2C35D26E00C152C7 /* Double+Extensions.swift */; };
+		A94F8EE22C35D57500C152C7 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EE12C35D57500C152C7 /* RatingView.swift */; };
+		A94F8EE42C35D8FB00C152C7 /* CarListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EE32C35D8FB00C152C7 /* CarListItemView.swift */; };
+		A94F8EE62C35D91A00C152C7 /* CarListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EE52C35D91A00C152C7 /* CarListItemViewModel.swift */; };
+		A94F8EE92C35DB8A00C152C7 /* MockCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EE82C35DB8A00C152C7 /* MockCar.swift */; };
 		A9C86D752C359EB400FFACC8 /* GuidomiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86D742C359EB400FFACC8 /* GuidomiaApp.swift */; };
 		A9C86D7D2C359EB500FFACC8 /* PreviewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C86D7C2C359EB500FFACC8 /* PreviewAssets.xcassets */; };
 		A9C86D872C359EB500FFACC8 /* GuidomiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86D862C359EB500FFACC8 /* GuidomiaTests.swift */; };
@@ -47,6 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A94F8EDB2C35CB4900C152C7 /* CarMake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMake.swift; sourceTree = "<group>"; };
+		A94F8EDD2C35CB6000C152C7 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		A94F8EDF2C35D26E00C152C7 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		A94F8EE12C35D57500C152C7 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		A94F8EE32C35D8FB00C152C7 /* CarListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListItemView.swift; sourceTree = "<group>"; };
+		A94F8EE52C35D91A00C152C7 /* CarListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListItemViewModel.swift; sourceTree = "<group>"; };
+		A94F8EE82C35DB8A00C152C7 /* MockCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCar.swift; sourceTree = "<group>"; };
 		A9C86D712C359EB400FFACC8 /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C86D742C359EB400FFACC8 /* GuidomiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaApp.swift; sourceTree = "<group>"; };
 		A9C86D7A2C359EB500FFACC8 /* Guidomia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guidomia.entitlements; sourceTree = "<group>"; };
@@ -98,6 +112,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A94F8EDA2C35CB3900C152C7 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				A94F8EDB2C35CB4900C152C7 /* CarMake.swift */,
+				A94F8EDD2C35CB6000C152C7 /* CarModel.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		A94F8EE72C35DB6400C152C7 /* Car */ = {
+			isa = PBXGroup;
+			children = (
+				A94F8EE82C35DB8A00C152C7 /* MockCar.swift */,
+			);
+			path = Car;
+			sourceTree = "<group>";
+		};
 		A9C86D682C359EB400FFACC8 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +167,7 @@
 		A9C86D7B2C359EB500FFACC8 /* PreviewContent */ = {
 			isa = PBXGroup;
 			children = (
+				A94F8EE72C35DB6400C152C7 /* Car */,
 				A9C86DBA2C35B30900FFACC8 /* JSON */,
 				A9C86D7C2C359EB500FFACC8 /* PreviewAssets.xcassets */,
 			);
@@ -227,6 +259,7 @@
 		A9C86DBE2C35B3BF00FFACC8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A94F8EDA2C35CB3900C152C7 /* Enums */,
 				A9C86DC92C35BAD000FFACC8 /* Car.swift */,
 			);
 			path = Models;
@@ -235,6 +268,7 @@
 		A9C86DBF2C35B3C700FFACC8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A94F8EE12C35D57500C152C7 /* RatingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,6 +278,8 @@
 			children = (
 				A9C86DC52C35B7CC00FFACC8 /* CarList.swift */,
 				A9C86DC72C35B7DA00FFACC8 /* CarListViewModel.swift */,
+				A94F8EE32C35D8FB00C152C7 /* CarListItemView.swift */,
+				A94F8EE52C35D91A00C152C7 /* CarListItemViewModel.swift */,
 			);
 			path = CarList;
 			sourceTree = "<group>";
@@ -260,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				A9C86DCF2C35BDD600FFACC8 /* Dictionary+KeyPaths.swift */,
+				A94F8EDF2C35D26E00C152C7 /* Double+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -424,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9C86DC32C35B6FC00FFACC8 /* Helpers.swift in Sources */,
+				A94F8EE92C35DB8A00C152C7 /* MockCar.swift in Sources */,
 				A9C86DCA2C35BAD000FFACC8 /* Car.swift in Sources */,
 				A9C86DC62C35B7CC00FFACC8 /* CarList.swift in Sources */,
 				A9C86DD22C35BF2F00FFACC8 /* AppError.swift in Sources */,
@@ -431,7 +469,13 @@
 				A9C86DB82C35AF7A00FFACC8 /* Strings+Generated.swift in Sources */,
 				A9C86DD02C35BDD600FFACC8 /* Dictionary+KeyPaths.swift in Sources */,
 				A9C86DB92C35AF7A00FFACC8 /* Fonts+Generated.swift in Sources */,
+				A94F8EE42C35D8FB00C152C7 /* CarListItemView.swift in Sources */,
+				A94F8EDE2C35CB6000C152C7 /* CarModel.swift in Sources */,
+				A94F8EE02C35D26E00C152C7 /* Double+Extensions.swift in Sources */,
 				A9C86DB72C35AF7A00FFACC8 /* Assets+Generated.swift in Sources */,
+				A94F8EE62C35D91A00C152C7 /* CarListItemViewModel.swift in Sources */,
+				A94F8EE22C35D57500C152C7 /* RatingView.swift in Sources */,
+				A94F8EDC2C35CB4900C152C7 /* CarMake.swift in Sources */,
 				A9C86DCD2C35BBCF00FFACC8 /* Model.swift in Sources */,
 				A9C86DC12C35B6E700FFACC8 /* Constants.swift in Sources */,
 				A9C86DC82C35B7DA00FFACC8 /* CarListViewModel.swift in Sources */,
