@@ -11,6 +11,9 @@ struct CarList<ViewModel: CarListViewModelProtocol>: View {
   
   @StateObject private var viewModel: ViewModel
   
+  @State private var showCarMakesPicker = false
+  @State private var showCarModelsPicker = false
+  
   init(viewModel: ViewModel) {
     self._viewModel = StateObject(wrappedValue: viewModel)
   }
@@ -22,7 +25,7 @@ struct CarList<ViewModel: CarListViewModelProtocol>: View {
         
         self.filterView()
         
-        ForEach(self.viewModel.itemViewModels) { itemViewModel in
+        ForEach(self.viewModel.filterdViewModels) { itemViewModel in
           CarListItemView(viewModel: itemViewModel)
           self.divider()
         }
@@ -36,27 +39,19 @@ struct CarList<ViewModel: CarListViewModelProtocol>: View {
       VStack {
         VStack(spacing: 16) {
           HStack {
-            Text("Filters")
+            Text(Strings.CarList.Labels.filters)
               .font(.system(size: 18))
               .foregroundColor(.white)
             Spacer()
           }
           
-          Button(action: {
-            
-          }, label: {
-            /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
-          })
-          .frame(maxWidth: .infinity)
-          .border(.green, width: 1)
+          ListFilterButton(action: {
+            self.showCarMakesPicker.toggle()
+          }, text: self.viewModel.selectedCarMake?.name ?? CarMakePicker.anyMake)
           
-          Button(action: {
-            
-          }, label: {
-            /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
-          })
-          .frame(maxWidth: .infinity)
-          .border(.green, width: 1)
+          ListFilterButton(action: {
+            self.showCarModelsPicker.toggle()
+          }, text: self.viewModel.selectedCarModel?.name ?? CarModelPicker.anyModel)
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 8)
@@ -68,6 +63,29 @@ struct CarList<ViewModel: CarListViewModelProtocol>: View {
     }
     .background(.white)
     .padding(20)
+    
+    .sheet(isPresented: self.$showCarMakesPicker, content: {
+      CarMakePicker(
+        selected: self.viewModel.selectedCarMake?.name ?? CarMakePicker.anyMake,
+        onChange: { make in
+          self.viewModel.selectedCarMake = CarMake(rawValue: make)
+          self.viewModel.selectedCarModel = nil
+        }
+      )
+      .presentationDetents([.height(200), .large])
+      .presentationCornerRadius(10)
+    })
+    
+    .sheet(isPresented: self.$showCarModelsPicker, content: {
+      CarModelPicker(
+        make: self.viewModel.selectedCarMake ?? .alpine,
+        onChange: { model in
+          self.viewModel.selectedCarModel = CarModel(rawValue: model)
+        }
+      )
+      .presentationDetents([.height(200), .large])
+      .presentationCornerRadius(10)
+    })
   }
   
   private func headerView() -> some View {

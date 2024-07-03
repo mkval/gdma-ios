@@ -13,9 +13,17 @@ internal enum Strings {
   internal enum CarList {
     internal enum Item {
       internal enum Labels {
+        /// Cons
+        internal static let cons = Strings.tr("Localizable", "CarList.Item.Labels.Cons", fallback: "Cons")
         /// Price
         internal static let price = Strings.tr("Localizable", "CarList.Item.Labels.Price", fallback: "Price")
+        /// Pros
+        internal static let pros = Strings.tr("Localizable", "CarList.Item.Labels.Pros", fallback: "Pros")
       }
+    }
+    internal enum Labels {
+      /// Filters
+      internal static let filters = Strings.tr("Localizable", "CarList.Labels.Filters", fallback: "Filters")
     }
   }
 }

@@ -6,4 +6,7 @@
   
 */
 
+CarList.Labels.Filters = "Filters";
 CarList.Item.Labels.Price = "Price";
+CarList.Item.Labels.Pros = "Pros";
+CarList.Item.Labels.Cons = "Cons";

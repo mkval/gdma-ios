@@ -15,18 +15,20 @@ protocol CarListItemViewModelProtocol: ObservableObject {
   var pros: [String] { get }
   var cons: [String] { get }
   
-  var isSelected: Bool { get set }
+  var make: CarMake { get }
+  
+  var isExpanded: Bool { get set }
 }
 
 final class CarListItemViewModel: CarListItemViewModelProtocol {
   
-  @Published var isSelected = false
+  @Published var isExpanded = false
   
   private let car: Car
   
-  init(car: Car, isSelected: Bool = false) {
+  init(car: Car, isExpanded: Bool = false) {
     self.car = car
-    self.isSelected = isSelected
+    self.isExpanded = isExpanded
   }
 }
 
@@ -82,5 +84,9 @@ extension CarListItemViewModel {
   
   var cons: [String] {
     self.car.cons.filter { !$0.isEmpty }
+  }
+  
+  var make: CarMake {
+    self.car.make
   }
 }

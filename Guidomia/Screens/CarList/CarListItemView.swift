@@ -15,7 +15,7 @@ struct CarListItemView<ViewModel: CarListItemViewModelProtocol>: View {
     VStack(spacing: 16) {
       self.topInfoView()
       
-      if self.viewModel.isSelected {
+      if self.viewModel.isExpanded {
         self.bottomInfoView()
       }
     }
@@ -24,10 +24,12 @@ struct CarListItemView<ViewModel: CarListItemViewModelProtocol>: View {
     .clipped()
     
     .onTapGesture {
-      self.viewModel.isSelected.toggle()
+      withAnimation {
+        self.viewModel.isExpanded.toggle()
+      }
     }
     
-    .animation(.default, value: self.viewModel.isSelected)
+    //.animation(.default, value: self.viewModel.isExpanded)
   }
   
   private func topInfoView() -> some View {
@@ -66,10 +68,10 @@ struct CarListItemView<ViewModel: CarListItemViewModelProtocol>: View {
   private func bottomInfoView() -> some View {
     VStack(alignment: .leading, spacing: 20) {
       if !self.viewModel.pros.isEmpty {
-        self.bulletList(title: "Pros:", items: self.viewModel.pros)
+        self.bulletList(title: "\(Strings.CarList.Item.Labels.pros):", items: self.viewModel.pros)
       }
       if !self.viewModel.cons.isEmpty {
-        self.bulletList(title: "Cons:", items: self.viewModel.cons)
+        self.bulletList(title: "\(Strings.CarList.Item.Labels.cons):", items: self.viewModel.cons)
       }
     }
     .frame(maxWidth: .infinity)
@@ -111,5 +113,5 @@ struct CarListItemView<ViewModel: CarListItemViewModelProtocol>: View {
 }
 
  #Preview {
-   CarListItemView(viewModel: CarListItemViewModel(car: .mockBmw3300i, isSelected: true))
+   CarListItemView(viewModel: CarListItemViewModel(car: .mockBmw3300i, isExpanded: true))
  }
