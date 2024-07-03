@@ -12,14 +12,21 @@ protocol CarListItemViewModelProtocol: ObservableObject {
   var imageAsset: ImageAsset? { get }
   var price: String { get }
   var rating: UInt { get }
+  var pros: [String] { get }
+  var cons: [String] { get }
+  
+  var isSelected: Bool { get set }
 }
 
 final class CarListItemViewModel: CarListItemViewModelProtocol {
   
+  @Published var isSelected = false
+  
   private let car: Car
   
-  init(car: Car) {
+  init(car: Car, isSelected: Bool = false) {
     self.car = car
+    self.isSelected = isSelected
   }
 }
 
@@ -67,5 +74,13 @@ extension CarListItemViewModel {
   
   var rating: UInt {
     UInt(self.car.rating)
+  }
+  
+  var pros: [String] {
+    self.car.pros.filter { !$0.isEmpty }
+  }
+  
+  var cons: [String] {
+    self.car.cons.filter { !$0.isEmpty }
   }
 }

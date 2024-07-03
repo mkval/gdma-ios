@@ -30,7 +30,7 @@ final class CarListViewModel: CarListViewModelProtocol {
       let array: [JSONDictionary] = try jsonDictionaryFromFile("car_list") ?? []
       self.itemViewModels = try array.map { try Car.decode($0) }
         .sorted(by: { $0.marketPrice > $1.marketPrice })
-        .map { CarListItemViewModel(car: $0) }
+        .map { CarListItemViewModel(car: $0, isSelected: false) }
       
     } catch {
       print("Failed loading car list from json file")

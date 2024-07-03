@@ -20,6 +20,8 @@ struct CarList<ViewModel: CarListViewModelProtocol>: View {
       LazyVStack(spacing: 0) {
         self.headerView()
         
+        self.filterView()
+        
         ForEach(self.viewModel.itemViewModels) { itemViewModel in
           CarListItemView(viewModel: itemViewModel)
           self.divider()
@@ -27,6 +29,45 @@ struct CarList<ViewModel: CarListViewModelProtocol>: View {
       }
       .frame(maxWidth: .infinity)
     }
+  }
+  
+  private func filterView() -> some View {
+    VStack {
+      VStack {
+        VStack(spacing: 16) {
+          HStack {
+            Text("Filters")
+              .font(.system(size: 18))
+              .foregroundColor(.white)
+            Spacer()
+          }
+          
+          Button(action: {
+            
+          }, label: {
+            /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+          })
+          .frame(maxWidth: .infinity)
+          .border(.green, width: 1)
+          
+          Button(action: {
+            
+          }, label: {
+            /*@START_MENU_TOKEN@*/Text("Button")/*@END_MENU_TOKEN@*/
+          })
+          .frame(maxWidth: .infinity)
+          .border(.green, width: 1)
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 8)
+        .padding(.bottom, 16)
+      }
+      .background(.primaryDarkGray)
+      .frame(maxWidth: .infinity)
+      .cornerRadius(8)
+    }
+    .background(.white)
+    .padding(20)
   }
   
   private func headerView() -> some View {
