@@ -28,8 +28,6 @@ struct CarListItemView<ViewModel: CarListItemViewModelProtocol>: View {
         self.viewModel.isExpanded.toggle()
       }
     }
-    
-    //.animation(.default, value: self.viewModel.isExpanded)
   }
   
   private func topInfoView() -> some View {

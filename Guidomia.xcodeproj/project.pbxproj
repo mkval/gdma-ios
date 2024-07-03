@@ -135,6 +135,15 @@
 			path = Car;
 			sourceTree = "<group>";
 		};
+		A94F8EF02C360D0F00C152C7 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				A94F8EEC2C35EFC200C152C7 /* CarMakePicker.swift */,
+				A94F8EEE2C35F61600C152C7 /* CarModelPicker.swift */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
 		A9C86D682C359EB400FFACC8 = {
 			isa = PBXGroup;
 			children = (
@@ -287,8 +296,7 @@
 				A9C86DC72C35B7DA00FFACC8 /* CarListViewModel.swift */,
 				A94F8EE32C35D8FB00C152C7 /* CarListItemView.swift */,
 				A94F8EE52C35D91A00C152C7 /* CarListItemViewModel.swift */,
-				A94F8EEC2C35EFC200C152C7 /* CarMakePicker.swift */,
-				A94F8EEE2C35F61600C152C7 /* CarModelPicker.swift */,
+				A94F8EF02C360D0F00C152C7 /* Pickers */,
 			);
 			path = CarList;
 			sourceTree = "<group>";
