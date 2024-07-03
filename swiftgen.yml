@@ -1,0 +1,32 @@
+input_dir: 'Guidomia/Resources'
+output_dir: 'Guidomia/Generated/'
+
+strings:
+  inputs:
+    - 'Localizable.strings'
+  outputs:
+    - templateName: structured-swift5
+      output: Strings+Generated.swift
+      params:
+        enumName: Strings
+
+xcassets:
+  inputs:
+    - 'Images.xcassets'
+    - 'Colors.xcassets'
+  outputs:
+    - templateName: swift5
+      output: Assets+Generated.swift
+      params:
+        forceProvidesNamespaces: true
+        enumName: Assets
+
+fonts:
+  inputs: 'Fonts/'
+  outputs:
+    templateName: swift5
+    output: Fonts+Generated.swift
+    params:
+      enumName: FontFamily
+      fontAliasName: SomeFont
+
