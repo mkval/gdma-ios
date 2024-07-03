@@ -11,7 +11,7 @@ import SwiftUI
 struct GuidomiaApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      CarList(viewModel: CarListViewModel())
     }
   }
 }

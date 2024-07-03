@@ -7,15 +7,11 @@
 
 import Foundation
 
-public func jsonDictionaryFromFile(_ name: String, bundle: Bundle = Bundle.main) throws -> JSONDictionary {
+public func jsonDictionaryFromFile<T>(_ name: String, bundle: Bundle = Bundle.main) throws -> T? {
   guard let path = bundle.path(forResource: name, ofType: "json") else {
-    fatalError("File \(name).json could not be located.")
+    throw AppError.missingResourceFile(name + ".json")
   }
   let data = try Data(contentsOf: URL(fileURLWithPath: path))
   let options = JSONSerialization.ReadingOptions.mutableContainers
-  
-  guard let dictionary = try JSONSerialization.jsonObject(with: data, options: options) as? JSONDictionary else {
-    return [:]
-  }
-  return dictionary
+  return try JSONSerialization.jsonObject(with: data, options: options) as? T
 }
