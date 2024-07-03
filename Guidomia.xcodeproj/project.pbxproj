@@ -19,6 +19,9 @@
 		A9C86DB72C35AF7A00FFACC8 /* Assets+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86DB42C35AF7A00FFACC8 /* Assets+Generated.swift */; };
 		A9C86DB82C35AF7A00FFACC8 /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86DB52C35AF7A00FFACC8 /* Strings+Generated.swift */; };
 		A9C86DB92C35AF7A00FFACC8 /* Fonts+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86DB62C35AF7A00FFACC8 /* Fonts+Generated.swift */; };
+		A9C86DBC2C35B33900FFACC8 /* car_list.json in Resources */ = {isa = PBXBuildFile; fileRef = A9C86DBB2C35B33900FFACC8 /* car_list.json */; };
+		A9C86DC12C35B6E700FFACC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86DC02C35B6E700FFACC8 /* Constants.swift */; };
+		A9C86DC32C35B6FC00FFACC8 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86DC22C35B6FC00FFACC8 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		A9C86DB42C35AF7A00FFACC8 /* Assets+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assets+Generated.swift"; sourceTree = "<group>"; };
 		A9C86DB52C35AF7A00FFACC8 /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
 		A9C86DB62C35AF7A00FFACC8 /* Fonts+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Fonts+Generated.swift"; sourceTree = "<group>"; };
+		A9C86DBB2C35B33900FFACC8 /* car_list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = car_list.json; sourceTree = "<group>"; };
+		A9C86DC02C35B6E700FFACC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A9C86DC22C35B6FC00FFACC8 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 				A9C86D742C359EB400FFACC8 /* GuidomiaApp.swift */,
 				A9C86DA42C35A35600FFACC8 /* Common */,
 				A9C86DA22C35A35600FFACC8 /* Screens */,
+				A9C86DBD2C35B36800FFACC8 /* Utils */,
 				A9C86DA02C35A35600FFACC8 /* Resources */,
 				A9C86D7B2C359EB500FFACC8 /* PreviewContent */,
 				A9C86DB32C35AF7A00FFACC8 /* Generated */,
@@ -119,6 +126,7 @@
 		A9C86D7B2C359EB500FFACC8 /* PreviewContent */ = {
 			isa = PBXGroup;
 			children = (
+				A9C86DBA2C35B30900FFACC8 /* JSON */,
 				A9C86D7C2C359EB500FFACC8 /* PreviewAssets.xcassets */,
 			);
 			path = PreviewContent;
@@ -163,6 +171,8 @@
 		A9C86DA42C35A35600FFACC8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A9C86DBE2C35B3BF00FFACC8 /* Models */,
+				A9C86DBF2C35B3C700FFACC8 /* Views */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -182,6 +192,37 @@
 				A9C86DB62C35AF7A00FFACC8 /* Fonts+Generated.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		A9C86DBA2C35B30900FFACC8 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				A9C86DBB2C35B33900FFACC8 /* car_list.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		A9C86DBD2C35B36800FFACC8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A9C86DC02C35B6E700FFACC8 /* Constants.swift */,
+				A9C86DC22C35B6FC00FFACC8 /* Helpers.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A9C86DBE2C35B3BF00FFACC8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A9C86DBF2C35B3C700FFACC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +338,7 @@
 				A9C86DAD2C35A8A000FFACC8 /* Localizable.strings in Resources */,
 				A9C86DA92C35A82700FFACC8 /* Images.xcassets in Resources */,
 				A9C86D7D2C359EB500FFACC8 /* PreviewAssets.xcassets in Resources */,
+				A9C86DBC2C35B33900FFACC8 /* car_list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,10 +385,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9C86DA62C35A35600FFACC8 /* ContentView.swift in Sources */,
+				A9C86DC32C35B6FC00FFACC8 /* Helpers.swift in Sources */,
 				A9C86D752C359EB400FFACC8 /* GuidomiaApp.swift in Sources */,
 				A9C86DB82C35AF7A00FFACC8 /* Strings+Generated.swift in Sources */,
 				A9C86DB92C35AF7A00FFACC8 /* Fonts+Generated.swift in Sources */,
 				A9C86DB72C35AF7A00FFACC8 /* Assets+Generated.swift in Sources */,
+				A9C86DC12C35B6E700FFACC8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
