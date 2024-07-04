@@ -1,5 +1,5 @@
 //
-//  ListFilterButton.swift
+//  SomeButton.swift
 //  Guidomia
 //
 //  Created by Mark Valles on 7/4/24.
@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-struct ListFilterButton: View {
-  
+struct SomeButton: View {
   var action: () -> Void
   var text: String
+  var alignment: Alignment = .center
   
   var body: some View {
     Button(action: self.action, label: {
       Text(self.text)
         .font(.system(size: 17, weight: .semibold))
-        .frame(maxWidth: .infinity, alignment: .leading)
+        .frame(maxWidth: .infinity, alignment: alignment)
         .padding(.horizontal, 20)
         .padding(.vertical, 8)
         .contentShape(Rectangle())
@@ -25,15 +25,13 @@ struct ListFilterButton: View {
         .cornerRadius(10)
     })
     .buttonStyle(.plain)
-    .shadow(color: .black.opacity(0.12), radius: 4, x: 0, y: 6)
     .shadow(color: .black.opacity(0.12), radius: 2, x: 0, y: 4)
-    .shadow(color: .black.opacity(0.12), radius: 0, x: 0, y: 1)
   }
 }
 
 #Preview {
   VStack {
-    ListFilterButton(action: {}, text: "Some button")
+    SomeButton(action: {}, text: "Some button")
   }
   .padding(20)
   .background(.primaryLightGray)

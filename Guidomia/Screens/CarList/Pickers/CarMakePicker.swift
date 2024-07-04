@@ -10,6 +10,7 @@ import SwiftUI
 struct CarMakePicker: View {
   static let anyMake = "Any model"
   
+  @Environment(\.dismiss) var dismiss
   @State var selectedMake: String = ""
   
   var onChange: ((String) -> Void)
@@ -24,12 +25,24 @@ struct CarMakePicker: View {
   
   var body: some View {
     VStack {
+      Spacer().frame(height: 30)
+      
       Picker("Car Make", selection: self.$selectedMake) {
         ForEach(self.carMakes, id: \.self) {
           Text($0)
         }
       }
       .pickerStyle(.wheel)
+      //.frame(minHeight: 150)
+      
+      HStack {
+        SomeButton(action: {
+          self.onChange(self.selectedMake)
+          self.dismiss()
+        }, text: "Done")
+        .padding(20)
+      }
+      .background(.primaryLightGray)
     }
     .onChange(of: self.selectedMake) { _, newValue in
       self.onChange(newValue)
@@ -38,7 +51,7 @@ struct CarMakePicker: View {
 }
 
 #Preview {
-  CarMakePicker(selected: CarMakePicker.anyMake, onChange: { make in
-    
-  })
+  VStack {
+    CarMakePicker(selected: CarMakePicker.anyMake, onChange: { _ in })
+  }
 }

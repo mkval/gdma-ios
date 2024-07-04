@@ -14,9 +14,10 @@
 		A94F8EE42C35D8FB00C152C7 /* CarListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EE32C35D8FB00C152C7 /* CarListItemView.swift */; };
 		A94F8EE62C35D91A00C152C7 /* CarListItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EE52C35D91A00C152C7 /* CarListItemViewModel.swift */; };
 		A94F8EE92C35DB8A00C152C7 /* MockCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EE82C35DB8A00C152C7 /* MockCar.swift */; };
-		A94F8EEB2C35EC5A00C152C7 /* ListFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EEA2C35EC5A00C152C7 /* ListFilterButton.swift */; };
 		A94F8EED2C35EFC200C152C7 /* CarMakePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EEC2C35EFC200C152C7 /* CarMakePicker.swift */; };
 		A94F8EEF2C35F61600C152C7 /* CarModelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EEE2C35F61600C152C7 /* CarModelPicker.swift */; };
+		A9C1CAAD2C365FBE00E49E93 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = A9C1CAAC2C365FBE00E49E93 /* ReadMe.md */; };
+		A9C1CAB22C3667AF00E49E93 /* SomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C1CAB12C3667AF00E49E93 /* SomeButton.swift */; };
 		A9C86D752C359EB400FFACC8 /* GuidomiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86D742C359EB400FFACC8 /* GuidomiaApp.swift */; };
 		A9C86D7D2C359EB500FFACC8 /* PreviewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C86D7C2C359EB500FFACC8 /* PreviewAssets.xcassets */; };
 		A9C86D872C359EB500FFACC8 /* GuidomiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86D862C359EB500FFACC8 /* GuidomiaTests.swift */; };
@@ -64,9 +65,10 @@
 		A94F8EE32C35D8FB00C152C7 /* CarListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListItemView.swift; sourceTree = "<group>"; };
 		A94F8EE52C35D91A00C152C7 /* CarListItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListItemViewModel.swift; sourceTree = "<group>"; };
 		A94F8EE82C35DB8A00C152C7 /* MockCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCar.swift; sourceTree = "<group>"; };
-		A94F8EEA2C35EC5A00C152C7 /* ListFilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFilterButton.swift; sourceTree = "<group>"; };
 		A94F8EEC2C35EFC200C152C7 /* CarMakePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMakePicker.swift; sourceTree = "<group>"; };
 		A94F8EEE2C35F61600C152C7 /* CarModelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelPicker.swift; sourceTree = "<group>"; };
+		A9C1CAAC2C365FBE00E49E93 /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		A9C1CAB12C3667AF00E49E93 /* SomeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeButton.swift; sourceTree = "<group>"; };
 		A9C86D712C359EB400FFACC8 /* Guidomia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guidomia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C86D742C359EB400FFACC8 /* GuidomiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidomiaApp.swift; sourceTree = "<group>"; };
 		A9C86D7A2C359EB500FFACC8 /* Guidomia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Guidomia.entitlements; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		A9C86D682C359EB400FFACC8 = {
 			isa = PBXGroup;
 			children = (
+				A9C1CAAC2C365FBE00E49E93 /* ReadMe.md */,
 				A9C86D732C359EB400FFACC8 /* Guidomia */,
 				A9C86D852C359EB500FFACC8 /* GuidomiaTests */,
 				A9C86D8F2C359EB500FFACC8 /* GuidomiaUITests */,
@@ -284,7 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				A94F8EE12C35D57500C152C7 /* RatingView.swift */,
-				A94F8EEA2C35EC5A00C152C7 /* ListFilterButton.swift */,
+				A9C1CAB12C3667AF00E49E93 /* SomeButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A9C1CAB02C36636F00E49E93 /* PBXTargetDependency */,
 			);
 			name = Guidomia;
 			packageProductDependencies = (
@@ -410,6 +414,7 @@
 			);
 			mainGroup = A9C86D682C359EB400FFACC8;
 			packageReferences = (
+				A9C1CAAE2C36635100E49E93 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = A9C86D722C359EB400FFACC8 /* Products */;
 			projectDirPath = "";
@@ -429,6 +434,7 @@
 			files = (
 				A9C86DAB2C35A84000FFACC8 /* Colors.xcassets in Resources */,
 				A9C86DAD2C35A8A000FFACC8 /* Localizable.strings in Resources */,
+				A9C1CAAD2C365FBE00E49E93 /* ReadMe.md in Resources */,
 				A9C86DA92C35A82700FFACC8 /* Images.xcassets in Resources */,
 				A9C86D7D2C359EB500FFACC8 /* PreviewAssets.xcassets in Resources */,
 				A9C86DBC2C35B33900FFACC8 /* car_list.json in Resources */,
@@ -481,6 +487,7 @@
 				A94F8EE92C35DB8A00C152C7 /* MockCar.swift in Sources */,
 				A9C86DCA2C35BAD000FFACC8 /* Car.swift in Sources */,
 				A9C86DC62C35B7CC00FFACC8 /* CarList.swift in Sources */,
+				A9C1CAB22C3667AF00E49E93 /* SomeButton.swift in Sources */,
 				A94F8EEF2C35F61600C152C7 /* CarModelPicker.swift in Sources */,
 				A9C86DD22C35BF2F00FFACC8 /* AppError.swift in Sources */,
 				A9C86D752C359EB400FFACC8 /* GuidomiaApp.swift in Sources */,
@@ -489,7 +496,6 @@
 				A9C86DB92C35AF7A00FFACC8 /* Fonts+Generated.swift in Sources */,
 				A94F8EE42C35D8FB00C152C7 /* CarListItemView.swift in Sources */,
 				A94F8EDE2C35CB6000C152C7 /* CarModel.swift in Sources */,
-				A94F8EEB2C35EC5A00C152C7 /* ListFilterButton.swift in Sources */,
 				A94F8EE02C35D26E00C152C7 /* Double+Extensions.swift in Sources */,
 				A9C86DB72C35AF7A00FFACC8 /* Assets+Generated.swift in Sources */,
 				A94F8EE62C35D91A00C152C7 /* CarListItemViewModel.swift in Sources */,
@@ -522,6 +528,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A9C1CAB02C36636F00E49E93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = A9C1CAAF2C36636F00E49E93 /* SwiftLintBuildToolPlugin */;
+		};
 		A9C86D842C359EB500FFACC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A9C86D702C359EB400FFACC8 /* Guidomia */;
@@ -851,6 +861,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A9C1CAAE2C36635100E49E93 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = exactVersion;
+				version = 0.55.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A9C1CAAF2C36636F00E49E93 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A9C1CAAE2C36635100E49E93 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9C86D692C359EB400FFACC8 /* Project object */;
 }

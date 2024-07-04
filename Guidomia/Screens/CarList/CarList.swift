@@ -45,13 +45,21 @@ struct CarList<ViewModel: CarListViewModelProtocol>: View {
             Spacer()
           }
           
-          ListFilterButton(action: {
-            self.showCarMakesPicker.toggle()
-          }, text: self.viewModel.selectedCarMake?.name ?? CarMakePicker.anyMake)
+          SomeButton(
+            action: {
+              self.showCarMakesPicker.toggle()
+            }, 
+            text: self.viewModel.selectedCarMake?.name ?? CarMakePicker.anyMake,
+            alignment: .leading
+          )
           
-          ListFilterButton(action: {
-            self.showCarModelsPicker.toggle()
-          }, text: self.viewModel.selectedCarModel?.name ?? CarModelPicker.anyModel)
+          SomeButton(
+            action: {
+              self.showCarModelsPicker.toggle()
+            }, 
+            text: self.viewModel.selectedCarModel?.name ?? CarModelPicker.anyModel,
+            alignment: .leading
+          )
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 8)
@@ -72,7 +80,7 @@ struct CarList<ViewModel: CarListViewModelProtocol>: View {
           self.viewModel.selectedCarModel = nil
         }
       )
-      .presentationDetents([.height(200), .large])
+      .presentationDetents([.height(240)])
       .presentationCornerRadius(10)
     })
     
@@ -83,7 +91,7 @@ struct CarList<ViewModel: CarListViewModelProtocol>: View {
           self.viewModel.selectedCarModel = CarModel(rawValue: model)
         }
       )
-      .presentationDetents([.height(200), .large])
+      .presentationDetents([.height(240)])
       .presentationCornerRadius(10)
     })
   }

@@ -10,6 +10,7 @@ import SwiftUI
 struct CarModelPicker: View {
   static let anyModel = "Any model"
   
+  @Environment(\.dismiss) var dismiss
   @State var selectedModel: String = CarModelPicker.anyModel
   
   var onChange: ((String) -> Void)
@@ -42,6 +43,15 @@ struct CarModelPicker: View {
         }
       }
       .pickerStyle(.wheel)
+      
+      HStack {
+        SomeButton(action: {
+          self.onChange(self.selectedModel)
+          self.dismiss()
+        }, text: "Done")
+        .padding(20)
+      }
+      .background(.primaryLightGray)
     }
     .onChange(of: self.selectedModel) { _, newValue in
       self.onChange(newValue)
@@ -50,7 +60,5 @@ struct CarModelPicker: View {
 }
 
 #Preview {
-  CarModelPicker(make: .alpine, onChange: { model in
-    
-  })
+  CarModelPicker(make: .alpine, onChange: { _ in })
 }

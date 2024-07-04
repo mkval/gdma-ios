@@ -85,7 +85,7 @@ struct CarListItemView<ViewModel: CarListItemViewModelProtocol>: View {
         Spacer()
       }
       VStack(spacing: 8) {
-        ForEach(Array(zip(items.indices, items)), id: \.0) { index, item in
+        ForEach(Array(zip(items.indices, items)), id: \.0) { _, item in
           self.bulletListItem(text: item)
         }
       }

@@ -22,16 +22,16 @@ extension Double {
     
     let units = ["", "k", "M"]
     var interval = self
-    var i = 0
+    var index = 0
     
-    while i < units.count - 1 {
+    while index < units.count - 1 {
       if abs(interval) < 1000.0 {
         break
       }
-      i += 1
+      index += 1
       interval /= 1000.0
     }
     
-    return "\(String(format: "%0.*g", Int(log10(abs(interval))) + 2, interval))\(units[i])"
+    return "\(String(format: "%0.*g", Int(log10(abs(interval))) + 2, interval))\(units[index])"
   }
 }
