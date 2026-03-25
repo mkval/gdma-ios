@@ -35,9 +35,9 @@ internal enum Assets {
       internal static let tacoma = ImageAsset(name: "tacoma")
     }
     internal enum CarImages {
+      internal static let mercedezBenzGLC = ImageAsset(name: "Mercedez_benz_GLC")
       internal static let alpineRoadster = ImageAsset(name: "alpine_roadster")
       internal static let bmw330i = ImageAsset(name: "bmw_330i")
-      internal static let mercedezBenzGlc = ImageAsset(name: "mercedez_benz_glc")
       internal static let rangeRover = ImageAsset(name: "range_rover")
     }
   }

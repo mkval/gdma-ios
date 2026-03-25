@@ -16,7 +16,6 @@
 		A94F8EE92C35DB8A00C152C7 /* MockCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EE82C35DB8A00C152C7 /* MockCar.swift */; };
 		A94F8EED2C35EFC200C152C7 /* CarMakePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EEC2C35EFC200C152C7 /* CarMakePicker.swift */; };
 		A94F8EEF2C35F61600C152C7 /* CarModelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94F8EEE2C35F61600C152C7 /* CarModelPicker.swift */; };
-		A9C1CAAD2C365FBE00E49E93 /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = A9C1CAAC2C365FBE00E49E93 /* ReadMe.md */; };
 		A9C1CAB22C3667AF00E49E93 /* SomeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C1CAB12C3667AF00E49E93 /* SomeButton.swift */; };
 		A9C86D752C359EB400FFACC8 /* GuidomiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C86D742C359EB400FFACC8 /* GuidomiaApp.swift */; };
 		A9C86D7D2C359EB500FFACC8 /* PreviewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C86D7C2C359EB500FFACC8 /* PreviewAssets.xcassets */; };
@@ -332,11 +331,11 @@
 				A9C86DAE2C35ABDD00FFACC8 /* Generate SwiftGen Resources */,
 				A9C86D6E2C359EB400FFACC8 /* Frameworks */,
 				A9C86D6F2C359EB400FFACC8 /* Resources */,
+				A9ABE7272F7410E70084165C /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A9C1CAB02C36636F00E49E93 /* PBXTargetDependency */,
 			);
 			name = Guidomia;
 			packageProductDependencies = (
@@ -434,7 +433,6 @@
 			files = (
 				A9C86DAB2C35A84000FFACC8 /* Colors.xcassets in Resources */,
 				A9C86DAD2C35A8A000FFACC8 /* Localizable.strings in Resources */,
-				A9C1CAAD2C365FBE00E49E93 /* ReadMe.md in Resources */,
 				A9C86DA92C35A82700FFACC8 /* Images.xcassets in Resources */,
 				A9C86D7D2C359EB500FFACC8 /* PreviewAssets.xcassets in Resources */,
 				A9C86DBC2C35B33900FFACC8 /* car_list.json in Resources */,
@@ -458,6 +456,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A9ABE7272F7410E70084165C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if command -v swiftlint >/dev/null 2>&1; then\n  swiftlint\nelse\n  echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation\"\nfi\n";
+		};
 		A9C86DAE2C35ABDD00FFACC8 /* Generate SwiftGen Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -528,10 +543,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A9C1CAB02C36636F00E49E93 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = A9C1CAAF2C36636F00E49E93 /* SwiftLintBuildToolPlugin */;
-		};
 		A9C86D842C359EB500FFACC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A9C86D702C359EB400FFACC8 /* Guidomia */;
@@ -868,18 +879,10 @@
 			repositoryURL = "https://github.com/realm/SwiftLint";
 			requirement = {
 				kind = exactVersion;
-				version = 0.55.1;
+				version = 0.63.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A9C1CAAF2C36636F00E49E93 /* SwiftLintBuildToolPlugin */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A9C1CAAE2C36635100E49E93 /* XCRemoteSwiftPackageReference "SwiftLint" */;
-			productName = "plugin:SwiftLintBuildToolPlugin";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A9C86D692C359EB400FFACC8 /* Project object */;
 }

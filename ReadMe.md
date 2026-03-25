@@ -1,3 +1,10 @@
+
+## Screenshots
+
+| Main                          | Accordion                               |
+|:---                           |:---                                     |
+| ![Main](Screenshots/main.png) | ![Accordion](Screenshots/accordion.png) |
+
 ## Getting Started
 
 | Summary                    |                |

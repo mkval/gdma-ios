@@ -64,7 +64,7 @@ extension CarListItemViewModel {
     case (CarMake.landRover, CarModel.rangeRover):
       return Assets.Images.CarImages.rangeRover
     case (CarMake.mercedesBenz, CarModel.gleCoupe):
-      return Assets.Images.CarImages.mercedezBenzGlc
+      return Assets.Images.CarImages.mercedezBenzGLC
     default:
       return nil
     }
